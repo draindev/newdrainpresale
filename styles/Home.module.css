@@ -1,0 +1,107 @@
+/* styles.module.css */
+
+@font-face {
+  font-family: 'FlyingBird-Yz9Ga';
+  src: url('../fonts/FlyingBird-Yz9Ga.otf') format('opentype');
+  /* Adjust the path to the font file as needed */
+}
+
+/* Use the local class .custom-body for body */
+.custom-body {
+  font-family: 'FlyingBird-Yz9Ga', sans-serif;
+}
+
+.container {
+  background: linear-gradient(144deg, rgba(255, 153, 153, 1) 0%, rgba(255, 51, 51, 1) 50%, rgba(204, 0, 0, 1) 100%);
+  color: #fff;
+  font-family: 'FlyingBird-Yz9Ga', sans-serif; /* Apply the custom font to the container */
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#walletConnection {
+  display: flex;
+  align-items: center;
+}
+
+#connectButton {
+  background-color: #000;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 20px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+#connectButton:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section {
+  flex: 1 1 30%;
+  margin: 10px;
+  border: 1px solid #fff;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.footer {
+  text-align: center; /* Center the content horizontally */
+  margin-top: 20px; /* Add some spacing above the footer */
+}
+
+
+.center-content {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.section h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Add 3D effect to buttons */
+.button {
+  background-color: #000; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: all 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); /* Add box-shadow for 3D effect */
+}
+
+/* Add hover effect */
+.button:hover {
+  background-color: #fff; /* Darker green */
+  color: black;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 12px 40px 0 rgba(0,0,0,0.19); /* Increase shadow on hover */
+}
